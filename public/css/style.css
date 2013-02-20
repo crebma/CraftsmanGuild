@@ -1,0 +1,123 @@
+.container {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 9em;
+    font-family: 'Lobster', cursive;
+}
+
+h2 {
+    font-size: 2.4em;
+    font-family: 'Oswald', sans-serif;
+}
+
+h3{
+    font-size: 1.9em;
+    font-family: 'Oswald', sans-serif;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.events {
+    margin-bottom: 2em;
+}
+
+#Pillar {
+    text-decoration: underline;
+}
+
+.content a {
+    font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+}
+
+nav a {
+    width: 180px;
+}
+
+.index-footer {
+    margin-top: 20px;
+}
+
+nav a:link, a:visited, footer a:link, a:visited {
+    font-family: 'Raleway', sans-serif;
+    display:block;
+    font-weight:bold;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+}
+
+a.resource_heading {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+li.resource {
+	padding-top: 15px;
+}
+
+div.event {
+	padding-top: 15px;
+}
+
+div.topic {
+	padding-top: 15px;
+	border-bottom: 1px solid #A89E8C;
+  	min-height: 100px;
+}
+
+.votes {
+    font-family: 'Oswald', sans-serif;
+	font-size: 2.3em;
+}
+
+.voting {
+	float: left;
+	text-align: right;
+}
+
+.padded-topic {
+	padding-left: 135px;
+}
+
+.topic-info {
+	padding-top: 7px;
+	padding-bottom: 20px;
+}
+
+p.edit-and-remove {
+	font-size: .8em;
+    clear: both;
+}
+
+.content {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contact-circle {
+    width: 100px;
+    height: 100px;
+}
+
+@media (min-width: 980px) {
+    .contact-circles {
+        float: right;
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 979px) {
+    .contact-circles, .logo {
+        text-align: center;
+    }
+}
