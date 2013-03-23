@@ -12,8 +12,12 @@ h2 {
     font-family: 'Oswald', sans-serif;
 }
 
-h3{
+h3 {
     font-size: 1.9em;
+    font-family: 'Oswald', sans-serif;
+}
+
+h3 a:link, h3 a:visited {
     font-family: 'Oswald', sans-serif;
 }
 

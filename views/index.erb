@@ -5,11 +5,6 @@
 
             <p><%= @event.description %> You can RSVP <a href="<%= @event.event_link %>">here</a>, if you like!</p>
 
-            <p>We are sponsored by <a href="http://detroitlabs.com/">Detroit Labs</a>, who will be buying us food!</p>
-
-            </p>If you want to submit a talk proposal for Craftsman Guild, you can do it
-            <a href="https://docs.google.com/forms/d/1CCTJ2kjZPrEkCQG6lSqjS7U9MIGd9fELBal1-cbZsMM/viewform">here</a>.</p>
-
             <% @event.presenters.each { |presenter| %>
                 <% unless presenter.bio == nil || presenter.bio.empty? %>
                     <h3 class="heading">About <%= presenter.name %>!</h3>
@@ -17,6 +12,8 @@
                     <p><%= presenter.bio %></p>
                 <%  end %>
             <% } %>
+
+            <p>We are sponsored by <a href="http://detroitlabs.com/">Detroit Labs</a>, who will be buying us food!</p>
 
         </div>
 
