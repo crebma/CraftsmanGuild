@@ -1,13 +1,11 @@
 <div class="row-fluid">
     <div class="span12">
         <div class="event">
-            <h3 class="heading"><%= @event.title %> (<%= @event.date.strftime('%-m/%-d/%Y') %>, 7pm) with <%= @event.presenters.collect { |presenter| presenter.name }.join (" and ") %></h3>
+            <h3 class="heading"><%= @event.title %> (<%= @event.date.strftime('%-m/%-d/%Y') %>, 7pm) with <%= @event.presenters.collect { |presenter| presenter.name }.join (" and ") %>, at <a href="<%= @event.location %>"><%= @event.location_name %></a></h3>
 
             <p><%= @event.description %> You can RSVP <a href="<%= @event.event_link %>">here</a>, if you like!</p>
 
-            <p>In addition to <a href="http://www.pillartechnology.com">Pillar Technology</a>, who sponsors us by giving
-                us a place to meet, we are also sponsored by <a href="http://detroitlabs.com/">Detroit Labs</a>, who will
-                be buying us food!</p>
+            <p>We are sponsored by <a href="http://detroitlabs.com/">Detroit Labs</a>, who will be buying us food!</p>
 
             </p>If you want to submit a talk proposal for Craftsman Guild, you can do it
             <a href="https://docs.google.com/forms/d/1CCTJ2kjZPrEkCQG6lSqjS7U9MIGd9fELBal1-cbZsMM/viewform">here</a>.</p>
@@ -31,16 +29,15 @@
 
         <p>We're a group of programmers who meets up to talk about anything related to programming, usually with an
             emphasis on TDD and clean code! Anything that helps us learn, grow, and teach with regards to software. We
-            meet every other Tuesday at 7:00pm at <a href="http://forge.pillartechnology.com">The Forge</a>. We also
+            meet the first Tuesday of every month at 7:00pm. We don't currently have a permanent home, so if you have a
+            space to accommodate us, send us an <a href="mailto:craftsmanguildmi@gmail.com">email</a>! We'll gladly let everyone know you sponsor us. We also
             have a <a href="http://groups.google.com/group/craftsman-guild">Google Group</a> if you'd like to join!</p>
     </div>
     <div class="donate span4">
         <h3 class="heading">Sponsors</h3>
 
-        <p>Craftsman Guild is sponsored by <a href="http://detroitlabs.com/">Detroit Labs</a> and
-            <a href="http://pillartechnology.com/">Pillar Technology</a>. Without their generous contributions,
-            Craftsman Guild wouldn't be cozy experience we all know and love. Thank you, Detroit Labs & Pillar
-            Technology!
+        <p>Craftsman Guild is sponsored by <a href="http://detroitlabs.com/">Detroit Labs</a>. Without their generous
+            contributions, Craftsman Guild wouldn't be cozy experience we all know and love. Thank you, Detroit Labs!
         </p>
     </div>
     <div class="twitter span4">

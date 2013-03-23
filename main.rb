@@ -13,6 +13,8 @@ class Event
   property :description, String, :length => 1024
   property :date, Date
   property :event_link, String, :length => 256
+  property :location, String, :length => 1024
+  property :location_name, String, :length => 256
 
   has n, :presenters
 
@@ -47,7 +49,6 @@ end
 get '/events' do
   @events = Event.all(:date.lt => Date.today.prev_day, :order => [ :date.desc ])
   erb :events
-
 end
 
 get '/presenters' do
