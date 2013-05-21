@@ -3,7 +3,7 @@
         <div class="event">
             <h3 class="heading"><%= @event.title %> (<%= @event.date.strftime('%-m/%-d/%Y') %>, 7pm) with <%= @event.presenters.collect { |presenter| presenter.name }.join (" and ") %>, at <a href="<%= @event.location %>"><%= @event.location_name %></a></h3>
 
-            <p><%= @event.description %> You can RSVP <a href="<%= @event.event_link %>">here</a>, if you like!</p>
+            <p><%= @event.description %> You can RSVP <a href="<%= @event.event_link %>">here</a>, if you would like some free food!</p>
 
             <% @event.presenters.each { |presenter| %>
                 <% unless presenter.bio == nil || presenter.bio.empty? %>
