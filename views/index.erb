@@ -1,6 +1,6 @@
-<% if @event %>
 <div class="row-fluid">
     <div class="span12">
+<% if @event %>
         <div class="event">
             <h3 class="heading"><%= @event.title %> (<%= @event.date.strftime('%-m/%-d/%Y') %>, 7pm) with <%= @event.presenters.collect { |presenter| presenter.name }.join (" and ") %>, at <a href="<%= @event.location %>"><%= @event.location_name %></a></h3>
 
@@ -18,9 +18,11 @@
 
         </div>
 
+<% else %>
+        <h3 class="heading">Next month's topic will be announced soon!</h3>
+<% end %>
     </div>
 </div>
-<% end %>
 
 <div class="row-fluid index-footer">
     <div class="about span4">
