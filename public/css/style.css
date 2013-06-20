@@ -113,6 +113,11 @@ p.edit-and-remove {
     height: 100px;
 }
 
+.contact-rectangle {
+    width: 100px;
+    height: 75px;
+}
+
 @media (min-width: 980px) {
     .contact-circles {
         float: right;
