@@ -10,7 +10,7 @@ class Event
 
   property :id, Serial
   property :title, String, :length => 256
-  property :description, String, :length => 1024
+  property :description, String, :length => 2048
   property :date, Date
   property :event_link, String, :length => 256
   property :location, String, :length => 1024
